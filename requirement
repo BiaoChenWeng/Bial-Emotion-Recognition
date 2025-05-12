@@ -1,0 +1,3 @@
+Debio a los modelos externos hacen falta instalar unas librerias para el correcto funcionamiento del projecto. Por favor ejecute el siguiente comando en la terminal para que se puede ejecutar el programa:
+
+pip install deepface torch onnxruntime transformers mediapipe
