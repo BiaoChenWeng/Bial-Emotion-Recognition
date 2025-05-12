@@ -9,7 +9,7 @@ argp = argparse.ArgumentParser()
 argp.add_argument("-m","--model",help="Choose a model to predict emotion the default model is : trpakov",default="t")    
 argp.add_argument("-i","--input",help="Choose a input so the model can evaluate",default=0)
 argp.add_argument("-c","--FR_Model",help="Choose a facial recognition model default = mediapipe",default="c")
-argp.add_argument("-d","--display",action="store_true",help= "Display the emotion on the screen",default= True)
+argp.add_argument("-d","--display",action="store_false",help= "Display the emotion on the screen",default= True)
 arg = argp.parse_args()
 
 EMOTION_MODELS = {

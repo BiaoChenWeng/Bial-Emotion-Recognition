@@ -141,37 +141,6 @@ class atulapra(Model):
     def loadEmotion(self):
         self.emocion = ["angry", "disgust", "fear", "happy", "neutral", "sad", "surprise"] 
 
-class otaha(Model):  
-    def __init__(self):
-        self.modelName = "otaha"
-        super().__init__()
-    
-    def loadModel(self):#carga las capas  se puede guardar en json
-        from keras.models import load_model
-        url ="https://drive.google.com/uc?id=1QksjWlwyRDM3--tZBSlHWIIGTRogc0uK"
-     
-        model_file = proyect_utils.getFilePath(f"{self.modelName}_weight.h5",url)
-        self.model = load_model(model_file, compile=False)
-        self.loadEmotion()
-    
-    def predict(self,input):
-        gray = input
-        if len(input.shape) == 3:
-            gray= cv2.cvtColor(input,cv2.COLOR_BGR2GRAY) 
-        gray = cv2.resize(gray, (64,64))
-        gray = gray.astype("float")/255.0
-        cropped_img = np.expand_dims(gray, 0)     
-        return self.model.predict(cropped_img,verbose=0)
-    
-    def decode(self,prediction):
-        return self.emocion[int(np.argmax(prediction))]
-    
-    def printSummary(self):
-        self.model.summary()
-    
-    def loadEmotion(self):
-        self.emocion = ["angry" ,"disgust","scared", "happy", "sad", "surprised","neutral"]
-
 class trpakov(Model):
 
     def __init__(self):
