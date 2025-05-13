@@ -20,7 +20,7 @@ The system performs the followig :
 | trpakov | https://huggingface.co/trpakov/vit-face-expression |
 | deepface | https://github.com/serengil/deepface |
 | atulapra | https://github.com/atulapra/Emotion-detection |
-
+|EMO-AffectNetModel|https://github.com/ElenaRyumina/EMO-AffectNetModel|
 ## Installation
 
 We recommend using a virtual environment to avoid interference with other libraries you may have installed on your computer.
@@ -54,7 +54,7 @@ You now have everything you need to run the program.
 
 ## Execution
 
-The program comes ready with 3 emotion detection models and 2 face detection models, all set up and ready to use at any time.
+The program comes ready with 4 emotion detection models and 2 face detection models, all set up and ready to use at any time.
 
 Running the code is as simple as using the following command:
 
