@@ -64,6 +64,6 @@ python .\main.py [options]
 
 The options include:
 - -m model : used to choose one of the 3 emotion detection models. By default, it uses Trpakov. (Check the EMOTION_MODELS array in main.py to see which values to use for the model).
-- -i video_path : used to select a video to process. (Valid formats: .mp4 and .mkv).
+- -i video_path : used to select a video to process. (Valid formats: .mp4 and .mkv). By default, it uses the computer camera.
 - -c model : used to choose one of the 2 face detection models. By default, it uses CV2. (Check the FR_MODELS array in main.py to see which values to use for the model).
 - -d : disable on-screen emotion display.
