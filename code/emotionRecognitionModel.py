@@ -175,7 +175,7 @@ class trpakov(Model):
         self.emocion = AutoConfig.from_pretrained("trpakov/vit-face-expression").id2label
 
 
-class Em(Model): # se le cambia el nombre despues
+class Em(Model): 
     def __init__(self):
         self.modelName = "em"
         super().__init__()
