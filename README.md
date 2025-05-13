@@ -11,3 +11,8 @@ The system performs the followig :
  * Display the result
  * The result is save in a CSV file: TimeStamp , predicted emotion label , probabilites for all emotions classes.
 
+
+
+
+# Usage
+python main.py [OPTIONS]
