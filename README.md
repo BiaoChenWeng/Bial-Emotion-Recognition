@@ -47,7 +47,7 @@ env/Scripts/activate
 To download all the necessary libraries, you can either install them individually by checking the `requirements.txt` file or run this command in the terminal:
 
 ~~~
-pip install deepface torch onnxruntime transformers mediapipe torchvision
+pip install -r requirements.txt
 ~~~
 
 You now have everything you need to run the program.
