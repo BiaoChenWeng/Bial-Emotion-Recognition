@@ -37,7 +37,7 @@ Once installed, you can download the repository or clone it into an empty folder
 git clone https://github.com/BiaoChenWeng/Bial-Emotion-Recognition.git
 ~~~
 
-With the repository ready, open a terminal in the code folder and run the following commands to create and activate the environment:
+With the repository ready, open a terminal in the `code` folder and run the following commands to create and activate the environment:
 
 ~~~
 py -3 -m venv env
@@ -63,7 +63,7 @@ python .\main.py [options]
 ~~~
 
 The options include:
-- -m <model> : used to choose one of the 3 emotion detection models. By default, it uses Trpakov. (Check the EMOTION_MODELS array in main.py to see which values to use for the model).
-- -i <video_path> : used to select a video to process. (Valid formats: .mp4 and .mkv).
-- -c <model> : used to choose one of the 2 face detection models. By default, it uses CV2. (Check the FR_MODELS array in main.py to see which values to use for the model).
+- -m model : used to choose one of the 3 emotion detection models. By default, it uses Trpakov. (Check the EMOTION_MODELS array in main.py to see which values to use for the model).
+- -i video_path : used to select a video to process. (Valid formats: .mp4 and .mkv).
+- -c model : used to choose one of the 2 face detection models. By default, it uses CV2. (Check the FR_MODELS array in main.py to see which values to use for the model).
 - -d : enables on-screen emotion display.
