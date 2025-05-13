@@ -12,10 +12,11 @@ The system performs the followig :
  * The result is save in a CSV file: TimeStamp , predicted emotion label , probabilites for all emotions classes.
 
 ## Models
-| Model | Link 
-| trpakov | https://huggingface.co/trpakov/vit-face-expression
-| deepface | https://github.com/serengil/deepface
-| atulapra | https://github.com/atulapra/Emotion-detection
+| Model | Link |
+| --- | --- |
+| trpakov | https://huggingface.co/trpakov/vit-face-expression |
+| deepface | https://github.com/serengil/deepface |
+| atulapra | https://github.com/atulapra/Emotion-detection |
 
 
 ## Usage
